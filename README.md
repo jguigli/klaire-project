@@ -23,11 +23,9 @@ npm create vite@latest frontend -- --template=React
 
 
 ## Useful link
-[NestJS doc](https://docs.nestjs.com)  
+[NestJS introduction doc](https://docs.nestjs.com)  
+[NestJS Controllers doc](https://docs.nestjs.com/controllers)  
 [Vite doc](https://vite.dev/guide/)  
-[]()  
-[]()  
-[]()  
-[]()  
-[]()  
-[]()  
+[TypeORM Entities](https://typeorm.io/docs/entity/entities)  
+[TypeORM Find](https://typeorm.io/docs/working-with-entity-manager/find-options)  
+[TypeORM QueryBuilder](https://typeorm.io/docs/query-builder/select-query-builder)  
