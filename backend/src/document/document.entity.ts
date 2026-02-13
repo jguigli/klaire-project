@@ -9,18 +9,14 @@ export class DocumentEntity {
     @Column()
     fileName: string
 
-    @Column({
-        type: "enum",
-        enum: DocumentStatus,
-        default: DocumentStatus.PENDING,
-    })
+    @Column({ type: "text", default: DocumentStatus.PENDING })
     status: DocumentStatus
 
     @Column()
     pageCount: number
 
-    @Column()
-    metadata: JSON
+    @Column({ type: 'simple-json', nullable: true })
+    metadata: JSON;
 
     @CreateDateColumn({ type: 'datetime' })
     createdAt: Date

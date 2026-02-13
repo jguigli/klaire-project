@@ -8,6 +8,9 @@ services:
     volumes:
       - "./frontend:/app"
       - /app/node_modules
+    environment:
+      - VITE_API_URL=http://localhost:3000
+      - VITE_FRONT_URL=http://localhost:5173
 
   api:
     build: ./backend
@@ -15,6 +18,8 @@ services:
       - "3000:3000"
     volumes:
       - "./backend:/app"
-      - ./data:/app/data
+      - /app/node_modules
+      - ./backend/data:/app/data
     environment:
       - DATABASE_PATH=/app/data/database.sqlite
+      - VITE_FRONT_URL=http://localhost:5173

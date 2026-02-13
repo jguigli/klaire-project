@@ -4,6 +4,8 @@ import { AppController } from 'src/app.controller';
 import { DocumentEntity } from 'src/document/document.entity';
 import { DocumentStatus } from 'src/document/document.status';
 
+// Tests with AI helpfulness
+
 // Mock du DataSource entier - must be at top level
 jest.mock('src/dataSource', () => {
   const mockMgr = {
